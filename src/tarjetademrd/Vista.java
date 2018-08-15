@@ -39,14 +39,14 @@ public class Vista extends JFrame implements interfazVista  {
         
         saldo=new JLabel("el SALDO es ");
         JPanel panelaux2=new JPanel(); panelaux2.add(saldo);
-        panelPrincipal.add(panelaux2,BorderLayout.CENTER);
+        panelPrincipal.add(panelaux2,BorderLayout.SOUTH);
         
         consultarr=new JButton("Consultar Saldo");
         consultarr.setActionCommand(CONS);
         
         JPanel botoncito=new JPanel();
         botoncito.add(consultarr);
-        panelPrincipal.add(botoncito, BorderLayout.SOUTH);
+        panelPrincipal.add(botoncito, BorderLayout.CENTER);
         
         getContentPane().add(panelPrincipal);
         
